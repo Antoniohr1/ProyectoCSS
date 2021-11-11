@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Overpass:ital,wght@1,300&display=swap');
+* {
+    margin: 0px;
+    padding: 0 px;
+    font-family: "Heebo";
+}
+
+html {
+    background-color: #9DA2AB;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    background: rgb(142, 173, 230);
+    background: linear-gradient(90deg, rgba(142, 173, 230, 1) 0%, rgba(157, 162, 171, 1) 25%, rgba(160, 164, 173, 1) 75%, rgba(142, 173, 230, 1) 100%);
+    /*background-color: #CCD2DE;*/
+    margin-bottom: 50%;
+    z-index: 5;
+    vertical-align: middle;
+    position: fixed;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.47);
+}
+
+nav {
+    max-width: 2000px;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+header img {
+    width: 3em;
+    float: left;
+    vertical-align: middle;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A465E;
+    font-family: "Heebo";
+    font-size: 1.3em;
+    line-height: 70px;
+    padding-right: 40px;
+    text-shadow: 2px 2px 3px #3A465E;
+    font-weight: bold;
+}
+
+header h1 {
+    margin-top: 17px;
+    color: #3A465E;
+    float: left;
+    vertical-align: middle;
+    margin-left: 40px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px #3A465E;
+}
+
+.espacio {
+    height: 68pxpx
+}
+
+div#articulosDestacados {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div#articulosDestacados h3 {
+    font-family: "Overpass";
+    color: #3A465E;
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 2px 2px 3px #3A465E;
+}
+
+p.descripcion {
+    color: #3A465E;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 3px #3A465E;
+}
+
+#articulosDestacados {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#articulosDestacados h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: rgb(142, 173, 230);
+    background: linear-gradient(90deg, rgba(142, 173, 230, 1) 0%, rgba(157, 162, 171, 1) 25%, rgba(160, 164, 173, 1) 75%, rgba(142, 173, 230, 1) 100%);
+}
+
+div#articulosDestacados a {
+    text-decoration: none;
+    color: #3A465E;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: solid #B5BAC4;
+    border-radius: 15px;
+    padding: 0.5em;
+    text-shadow: 2px 2px 3px #3A465E;
+}
+
+.articulosDestacadosTexto {
+    font-weight: 400;
+    text-decoration: black;
+    background: rgb(142, 173, 230);
+    background: linear-gradient(90deg, rgba(142, 173, 230, 1) 0%, rgba(157, 162, 171, 1) 25%, rgba(160, 164, 173, 1) 75%, rgba(142, 173, 230, 1) 100%);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: solid #B5BAC4;
+    border-radius: 15px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.articulosDestacadosTexto:hover {
+    padding: 30px;
+}
+
+div#articulosDestacados ul hr {
+    background-color: #9ABBF9;
+    width: 100%;
+}
+
+div#ultimasNovedades {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+div#ultimasNovedades table {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+}
+
+div#ultimasNovedades tr {
+    text-align: center;
+}
+
+div#ultimasNovedades caption {
+    color: #3A465E;
+    font-family: "Overpass";
+    font-size: 1.6em;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+div#ultimasNovedades a {
+    text-decoration: none;
+    color: #3A465E;
+    font-size: 1.3em;
+}
+
+div#ultimasNovedades img {
+    width: 450px;
+    height: 250px;
+}
+
+.imagenParadax {
+    background-image: url("../images/skyscrapers-g8c9affb6f_1920.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 20px 8px 15px 2px rgba(0, 0, 0, 0.47);
+}
+
+.imagenParadax img {
+    max-width: 350px;
+}
