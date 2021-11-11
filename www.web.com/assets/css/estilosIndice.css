@@ -24,6 +24,10 @@ header {
     box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.47);
 }
 
+hr {
+    display: none
+}
+
 nav {
     max-width: 2000px;
     margin: 0 auto;
@@ -139,18 +143,18 @@ div#articulosDestacados a {
     padding: 30px;
 }
 
-div#articulosDestacados ul hr {
+#articulosDestacados ul hr {
     background-color: #9ABBF9;
     width: 100%;
 }
 
-div#ultimasNovedades {
+#ultimasNovedades {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
-div#ultimasNovedades table {
+#ultimasNovedades table {
     width: 50%;
     margin: 0 auto;
     text-align: left;
@@ -158,11 +162,11 @@ div#ultimasNovedades table {
     border-spacing: 30px 10px;
 }
 
-div#ultimasNovedades tr {
+#ultimasNovedades tr {
     text-align: center;
 }
 
-div#ultimasNovedades caption {
+#ultimasNovedades caption {
     color: #3A465E;
     font-family: "Overpass";
     font-size: 1.6em;
@@ -170,15 +174,22 @@ div#ultimasNovedades caption {
     margin-bottom: 40px;
 }
 
-div#ultimasNovedades a {
+#ultimasNovedades a {
     text-decoration: none;
     color: #3A465E;
     font-size: 1.3em;
 }
 
-div#ultimasNovedades img {
+#ultimasNovedades img {
     width: 450px;
     height: 250px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#ultimasNovedades img:hover {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
 }
 
 .imagenParadax {
@@ -197,4 +208,41 @@ div#ultimasNovedades img {
 
 .imagenParadax img {
     max-width: 350px;
+}
+
+footer {
+    border-top: 4px solid rgba(142, 173, 230, 1);
+    border-bottom: 4px solid rgba(142, 173, 230, 1);
+    padding: 30px 0 30px 0;
+    text-align: center;
+    clear: both;
+    background: rgb(142, 173, 230);
+    background: linear-gradient(90deg, rgba(142, 173, 230, 1) 10%, rgba(157, 162, 171, 1) 35%, rgba(160, 164, 173, 1) 65%, rgba(142, 173, 230, 1) 100%);
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-envelope {
+    text-decoration: none;
+    font-size: 2em;
+    display: block;
+    padding: 10px;
+    color: #3A465E;
+    margin-bottom: 15px;
+}
+
+.fa-whatsapp {
+    text-decoration: none;
+    padding-right: 40px;
+    color: #3A465E;
+    font-size: 2em;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.contactos {
+    text-decoration: none;
+    color: #3A465E;
+    font-weight: bold;
 }

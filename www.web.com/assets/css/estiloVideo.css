@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Overpass:ital,wght@1,300&display=swap');
+* {
+    margin: 0px;
+    padding: 0 px;
+    font-family: "Heebo";
+}
+
+html {
+    background-color: #9DA2AB;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    background: rgb(142, 173, 230);
+    background: linear-gradient(90deg, rgba(142, 173, 230, 1) 0%, rgba(157, 162, 171, 1) 25%, rgba(160, 164, 173, 1) 75%, rgba(142, 173, 230, 1) 100%);
+    /*background-color: #CCD2DE;*/
+    margin-bottom: 50%;
+    z-index: 5;
+    vertical-align: middle;
+    position: fixed;
+    box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.47);
+}
+
+nav {
+    max-width: 2000px;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+header img {
+    width: 3em;
+    float: left;
+    vertical-align: middle;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A465E;
+    font-family: "Heebo";
+    font-size: 1.3em;
+    line-height: 70px;
+    padding-right: 40px;
+    text-shadow: 2px 2px 3px #3A465E;
+    font-weight: bold;
+}
+
+header h1 {
+    margin-top: 17px;
+    color: #3A465E;
+    float: left;
+    vertical-align: middle;
+    margin-left: 40px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 3px #3A465E;
+}
+
+.espacio {
+    height: 68px;
+}
+
+footer {
+    border-top: 4px solid rgba(142, 173, 230, 1);
+    border-bottom: 4px solid rgba(142, 173, 230, 1);
+    padding: 30px 0 30px 0;
+    text-align: center;
+    clear: both;
+    background: rgb(142, 173, 230);
+    background: linear-gradient(90deg, rgba(142, 173, 230, 1) 10%, rgba(157, 162, 171, 1) 35%, rgba(160, 164, 173, 1) 65%, rgba(142, 173, 230, 1) 100%);
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-envelope {
+    text-decoration: none;
+    font-size: 2em;
+    display: block;
+    padding: 10px;
+    color: #3A465E;
+    margin-bottom: 15px;
+}
+
+.fa-whatsapp {
+    text-decoration: none;
+    padding-right: 40px;
+    color: #3A465E;
+    font-size: 2em;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.contactos {
+    text-decoration: none;
+    color: #3A465E;
+    font-weight: bold;
+}
