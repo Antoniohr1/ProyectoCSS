@@ -24,6 +24,19 @@ header {
     box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.47);
 }
 
+a {
+    -webkit-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+}
+
+a:hover {
+    background-color: #D5DCE8;
+    border: solid #D5DCE8;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
 nav {
     max-width: 2000px;
     margin: 0 auto;
@@ -60,14 +73,6 @@ nav li a {
     margin-right: 40px;
     text-shadow: 2px 2px 3px #3A465E;
     font-weight: bold;
-    -webkit-transition: background-color 1s linear;
-    transition: background-color 1s linear;
-}
-
-nav li a:hover {
-    background-color: #D5DCE8;
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 
 header h1 {
