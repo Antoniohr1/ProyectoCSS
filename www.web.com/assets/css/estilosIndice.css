@@ -6,6 +6,22 @@
     font-family: "Heebo";
 }
 
+.click:after {
+    content: "En pantalla grande";
+}
+
+@media (max-width: 1024px) {
+    .click:after {
+        content: "Tablet";
+    }
+}
+
+@media (max-width: 480px) {
+    .click:after {
+        content: "Movil";
+    }
+}
+
 html {
     background-color: #9DA2AB;
 }
@@ -32,14 +48,6 @@ nav {
     max-width: 2000px;
     margin: 0 auto;
     z-index: 5;
-}
-
-a {
-    cursor: pointer;
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
 }
 
 a:hover {
@@ -93,7 +101,7 @@ header h1 {
 }
 
 .espacio {
-    height: 68pxpx
+    height: 68px;
 }
 
 div#articulosDestacados {

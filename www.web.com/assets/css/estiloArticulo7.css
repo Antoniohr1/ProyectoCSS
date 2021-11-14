@@ -118,32 +118,52 @@ header h1 {
     margin-bottom: 40px;
 }
 
-.main {
-    max-width: 1800px;
-    margin: 0 auto;
-    border-bottom: 20px;
-}
-
-.containerMapa {
-    width: 75%;
-    float: left;
-    margin-left: 20px;
+.title {
     background-color: rgb(142, 173, 230);
     border: solid #D5DCE8;
     border-radius: 15px;
+    width: 30%;
+    margin-bottom: 25px;
     text-align: center;
-    padding: 15px;
 }
 
-.containerMapa p {
-    text-align: justify;
+.main {
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
-.mapa {
+.articulo25 {
+    width: 75%;
+    float: left;
+    margin-left: 20px;
+}
+
+.parte1,
+.parte2 {
+    background-color: rgb(142, 173, 230);
+    border: solid #D5DCE8;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.fotos {
+    text-align: center;
     margin-top: 20px;
-    height: 300px;
-    width: 1200px;
-    text-align: center;
+}
+
+.parte1 p,
+.parte2 p {
+    text-align: justify;
+    width: 80%;
+}
+
+.parte1 img,
+.parte2 img {
+    width: 350px;
+    height: 250px;
 }
 
 .contenedorAside {
@@ -173,11 +193,6 @@ figure .fa-youtube {
     font-size: 100px;
 }
 
-.espacio2 {
-    margin-top: 39%;
-    margin-bottom: 40px;
-}
-
 footer {
     border-top: 4px solid rgba(142, 173, 230, 1);
     border-bottom: 4px solid rgba(142, 173, 230, 1);
@@ -186,7 +201,6 @@ footer {
     clear: both;
     background: rgb(142, 173, 230);
     background: linear-gradient(90deg, rgba(142, 173, 230, 1) 10%, rgba(157, 162, 171, 1) 35%, rgba(160, 164, 173, 1) 65%, rgba(142, 173, 230, 1) 100%);
-    margin-top: 30px;
 }
 
 .fa-twitter,

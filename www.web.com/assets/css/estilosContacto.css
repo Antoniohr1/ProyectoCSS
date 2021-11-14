@@ -6,6 +6,22 @@
     font-family: "Heebo";
 }
 
+.click:after {
+    content: "En pantalla grande";
+}
+
+@media (max-width: 1024px) {
+    .click:after {
+        content: "Tablet";
+    }
+}
+
+@media (max-width: 480px) {
+    .click:after {
+        content: "Movil";
+    }
+}
+
 html {
     background-color: #9DA2AB;
 }
@@ -25,8 +41,8 @@ header {
 }
 
 a {
-    -webkit-transition: background-color 1s linear;
-    transition: background-color 1s linear;
+    text-decoration: none;
+    color: #3A465E;
 }
 
 a:hover {
@@ -149,8 +165,11 @@ textarea {
 }
 
 .contenedorAside {
-    float: left;
+    float: right;
     width: 20%;
+    margin-right: 25px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .contenedorAside img {
@@ -160,11 +179,21 @@ textarea {
 }
 
 .asideDerecha {
+    border: solid #D5DCE8;
+    border-radius: 15px;
     background-color: #B9BFC9;
-    float: left;
     width: 200px;
     padding-left: 10px;
     margin-left: 200px;
+}
+
+figure .fa-map-marker-alt,
+figure .fa-youtube {
+    font-size: 100px;
+}
+
+.footer {
+    margin-top: 50px;
 }
 
 footer {
@@ -190,7 +219,6 @@ footer {
 
 .fa-whatsapp {
     text-decoration: none;
-    padding-right: 40px;
     color: #3A465E;
     font-size: 2em;
     position: fixed;

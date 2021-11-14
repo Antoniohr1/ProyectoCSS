@@ -6,6 +6,22 @@
     font-family: "Heebo";
 }
 
+.click:after {
+    content: "En pantalla grande";
+}
+
+@media (max-width: 1024px) {
+    .click:after {
+        content: "Tablet";
+    }
+}
+
+@media (max-width: 480px) {
+    .click:after {
+        content: "Movil";
+    }
+}
+
 html {
     background-color: #9DA2AB;
 }
@@ -24,9 +40,25 @@ header {
     box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.47);
 }
 
+hr {
+    display: none;
+}
+
+img:not([alt]) {
+    border: 3px solid red;
+    background-color: red;
+}
+
 a {
-    -webkit-transition: background-color 1s linear;
-    transition: background-color 1s linear;
+    text-decoration: none;
+    color: #3A465E;
+}
+
+h3,
+h2 {
+    color: #3A465E;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 a:hover {
@@ -89,6 +121,130 @@ header h1 {
     height: 68px;
 }
 
+.definicion {
+    display: block;
+    margin-top: 40px;
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.definicion:hover {
+    background-color: rgb(142, 173, 230);
+    border: solid #D5DCE8;
+    border-radius: 15px;
+}
+
+.definicion p {
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.definicion:hover p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.main {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.articulos {
+    width: 75%;
+    float: left;
+    margin-left: 20px;
+}
+
+#articulo2 {
+    background-color: rgb(142, 173, 230);
+    border: solid #D5DCE8;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#articulo10 {
+    background-color: rgb(142, 173, 230);
+    border: solid #D5DCE8;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+}
+
+.texto {
+    text-align: justify;
+    width: 80%;
+    height: 150px;
+    overflow: scroll
+}
+
+.fotos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fotos img {
+    width: 350px;
+}
+
+.contenedorAside {
+    float: right;
+    width: 20%;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.contenedorAside img {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.asideDerecha {
+    border: solid #D5DCE8;
+    border-radius: 15px;
+    background-color: #B9BFC9;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 200px;
+}
+
+figure .fa-map-marker-alt,
+figure .fa-youtube {
+    font-size: 100px;
+}
+
+.nuevasEntradas {
+    margin-top: 55%;
+    padding: 110px 0 110px 0;
+    text-align: center;
+    width: 100%;
+    background-color: #B9BFC9;
+}
+
+.fa-map-marker-alt,
+.fa-youtube {
+    font-size: 2.7em;
+    display: block;
+    color: #3A465E;
+    margin-bottom: 30px;
+}
+
+.flexBox {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flexBox p {
+    padding: 30px;
+    max-width: 300px;
+}
+
 footer {
     border-top: 4px solid rgba(142, 173, 230, 1);
     border-bottom: 4px solid rgba(142, 173, 230, 1);
@@ -112,7 +268,6 @@ footer {
 
 .fa-whatsapp {
     text-decoration: none;
-    padding-right: 40px;
     color: #3A465E;
     font-size: 2em;
     position: fixed;
